@@ -21,10 +21,13 @@
   border-radius: 50px;
 }
 
-.progress-bar.loaded.content {
+.progress-bar__content {
   width: 100%;
   background-color: lightblue;
   margin: 0;
+}
+
+.progress-bar__content.animated {
   animation-name: growing;
   animation-duration: 2s;
   animation-timing-function: ease;
