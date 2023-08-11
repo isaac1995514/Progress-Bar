@@ -1,0 +1,32 @@
+@keyframes growing {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  height: 20px;
+  width: clamp(200px, 50%, 1000px);
+  background-color: lightgray;
+  border-radius: 50px;
+}
+
+.progress-bar.loaded.content {
+  width: 100%;
+  background-color: lightblue;
+  margin: 0;
+  animation-name: growing;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}

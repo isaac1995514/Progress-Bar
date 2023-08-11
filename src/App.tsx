@@ -5,7 +5,7 @@ import './style.css';
 export default function App() {
   return (
     <div>
-      <ProgressBar />
+      <ProgressBar percentage={50} />
     </div>
   );
 }
